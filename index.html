@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randon-Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Select Options to Generate Password</h1>
+
+        <!-- Lowercase Option -->
+        <label for="lowercase">Include Lowercase Letters: </label>
+        <input type="checkbox" id="lowercase" name="lowercase"> <br>
+
+        <!-- Uppercase Option -->
+        <label for="uppercase">Include Uppercase Letters: </label>
+        <input type="checkbox" id="uppercase" name="uppercase"> <br>
+
+        <!-- Number Option -->
+        <label for="numbers">Include Numbers: </label>
+        <input type="checkbox" id="numbers" name="numbers"> <br>
+
+        <!-- Special Character Option -->
+        <label for="specialChars">Include Special Characters: </label>
+        <input type="checkbox" id="specialChars" name="specialChars"> <br><br>
+
+        <!-- Password Length -->
+        <label for="passwordLength">Password Length:</label>
+        <input type="number" id="passwordLength" name="passwordLength" min="4" max="20" value="8"> <br><br>
+
+        <!-- Generate Button -->
+        <button id="generatePassword" onclick="generateRandomPassword()">Generate Password</button>
+
+        <!-- Password Output -->
+        <div>
+            <p id="passwordResult">Password will appear here...</p>
+        </div>
+    </div>
+    <script src="first.js"></script>
+</body>
+
+</html>
